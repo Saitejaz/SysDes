@@ -1,0 +1,30 @@
+Factory Design Pattern is a Creational Design Pattern
+
+To simply say, we decouple the object creation part from main class/concrete classes, so in this way client code able to requests for objects, but not able to see how they are implemented.
+
+
+
+
+Simple Factory [Design Principle]
+---------------
+Client->Factory->Product
+
+Example:
+--------
+
+
+Factory Method [Design Pattern]
+--------------
+
+                               -> Concrete Creator Product A ->    
+Client -> Creator(Abstarct) ->                                 -> Product
+                               -> Concrete Creator Product B ->
+
+
+Abstract Factory Method [Design Pattern]
+-----------------------
+
+
+
+
+
