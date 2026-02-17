@@ -7,15 +7,13 @@ To simply say, we decouple the object creation part from main class/concrete cla
 
 Simple Factory [Design Principle]
 ---------------
+Def : Creating an Object with out exposing the instantiation logic to client(Main Method/UI/Whoever it is trying to create those objects)
 Client->Factory->Product
-
-Example:
---------
 
 
 Factory Method [Design Pattern]
 --------------
-
+Defines an interface for creating objects, but allows subclasses to decide which classes to instantiate.
                                -> Concrete Creator Product A ->    
 Client -> Creator(Abstarct) ->                                 -> Product
                                -> Concrete Creator Product B ->
