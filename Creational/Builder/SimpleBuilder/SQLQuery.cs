@@ -73,6 +73,26 @@ public class SQLQuery
 		}
 	}
 
+	public class SQLQueryDirector
+	{
+		public SQLQuery GetAllUsers(SQLQuery.SQLBuilder builder)
+		{
+			return builder
+				   .withSelect("*")
+				   .withFrom("Users")
+				   .Build();
+		}
+
+        public SQLQuery GetAllUserById(SQLQuery.SQLBuilder builder, int id)
+        {
+            return builder
+                   .withSelect("*")
+                   .withFrom("Users")
+				   .withWhere($"id = {id}")
+                   .Build();
+        }
+    }
+
 	public class SQLQueryArgumentBuilder
 	{
 		public static void Main()

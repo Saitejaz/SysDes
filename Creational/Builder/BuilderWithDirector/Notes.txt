@@ -1,0 +1,9 @@
+What is Director here??
+
+So Director is nothing but, if you want to define a process or a construction logic which is 
+ frequently called or used then we define those kind of logic upfront in Director and we call 
+ it using through our builder.
+
+
+
+So client no need to chain again and again for frequent logic.
