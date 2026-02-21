@@ -1,0 +1,39 @@
+Builder Design Pattern : Seperation of construction of an objects from it's representations
+
+So try to understand the words :
+ 1. Seperation of Construction   ->  Constructors are seperated from concrete class and store in Builder class
+ 2. From Objects Representation  -> Concrete classes are the Object representationers
+
+
+So we construct the constructor seperately and pass it to the class for which we need an object. So from that constructor we can create required object(representer)
+
+Example : Say you have a HTTPRequest class, which accepts 3 parameters(required) and optional are set through setters method.
+
+1.Required values can set through constructor, but optional we cannot guarantee.
+    To solve this we can go ahead with creating setters method for optional parameters.
+2.But, Problem arises when you want all the parameters required and optional both and you forgot setting 
+    optional and sending a request! We will compile safely, but API won't serve with any response.
+    But But there will be a runtime Error (Inconsistent state).
+3.To avoid above(2) problem we can validate it before calling an api request, but the validations which we are writing
+    they are scattered and they are too much and in future they may cause problems for us to maintain.
+
+
+
+
+Why we approach for Builder Pattern Design
+1.Complex constructor and overloading ( Telescoping)
+2.Inconsistent state (run time errors) if we are not setting values in constructors
+3.Scattered validations to validate all the values of class members.
+
+
+So we can define this Builder Design Pattern in 3 Ways
+    1.Builder Involved
+    2.(Buidler + Director[optional]) Involved
+    3.Step Builder
+
+Prerequisite : You should be aware of this keyword (current class reference)
+
+
+
+
+
